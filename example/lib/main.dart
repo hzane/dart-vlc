@@ -17,16 +17,18 @@ class DartVLCExampleState extends State<DartVLCExample> {
   Player player = Player(
     id: 0,
     videoWidth: 480,
-    videoHeight: 360,
+    videoHeight: 460,
   );
-  MediaType mediaType = MediaType.file;
+  MediaType mediaType = MediaType.network;
   CurrentState current = new CurrentState();
   PositionState position = new PositionState();
   PlaybackState playback = new PlaybackState();
   GeneralState general = new GeneralState();
   List<Media> medias = <Media>[];
   List<Device> devices = <Device>[];
-  TextEditingController controller = new TextEditingController();
+  TextEditingController controller = new TextEditingController(
+      text:
+          'https://xs-image-proxy.yinjietd.com/video/134916897_60e525b89e59f2.60959574.mov');
   TextEditingController metasController = new TextEditingController();
   Media? metasMedia;
 

@@ -11,3 +11,6 @@ build/
 .idea
 
 example/*
+windows/bin/
+windows/include/vlc/
+windows/include/vlcpp/
